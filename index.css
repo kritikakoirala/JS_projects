@@ -1,91 +1,17 @@
-.section-one{
+
+.dashboard{
+  display: flex;
+  flex-direction: column;
   width: 80%;
-  margin:0 auto;
-}
-
-.section-one_solution{
-  display: none;
-  flex-direction: row;
-  flex-wrap: wrap;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.disable{
-  background:rgb(0, 0, 0, 0.5);
-}
-
-.section-one_stats{
-  display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items:center;
-
+  margin:2em auto;
 }
 
 
-.section-one_stats .stats{
-  display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items:center;
-
-}
-
-.section-one_stats .stats h3{
-  margin:0 1em 0 0;
-  font-weight: normal;
-
-}
-
-.start-button{
-  padding: 0.6em 2em;
-  border-radius: 10px;
-  border: none;
-}
-.cards {
-  perspective: 1000px;
+.card{
   width: 250px;
-  height: 200px;
-  margin: 2em;
+  height: 250px;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 1.0);
+  text-align: center;
 }
 
-.flipper {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.6s;
-}
-
-.cards.is-flipped .flipper {
-  transform: rotateY(180deg);
-}
-
-.cards-front,
-.cards-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5em;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: 1px solid #000;
-  box-sizing: border-box;
-}
-
-.cards-front {
-  background: white;
-  color: black;
-  transform: rotateY(180deg); /* Hidden initially */
-}
-
-.cards-back {
-  background: #333;
-  color: white;
-  transform: rotateY(0deg); /* Visible initially */
-}
